@@ -8,7 +8,14 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+:root {
+    --color: #9da6a5;
+}
 /* commit */
+.desc-font {
+    font-size: 1.4rem;
+    color: var(--color);
+}
 .content {
     width: 1110px;
     margin-left: auto;
@@ -107,7 +114,7 @@ body {
 
 .hero-wrap .title {
     color: #0d1111;
-    width: 458px;
+    width: 460px;
     font-size: 6.2rem;
     font-weight: 700;
     margin-top: 18px;
@@ -278,6 +285,7 @@ body {
 .features {
     margin-top: 130px;
 }
+
 .features .sub-title {
     color: #767e7e;
     font-size: 1.2rem;
@@ -296,26 +304,137 @@ body {
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
+    margin-top: 18px;
 }
-.features .column {
+.features .row {
+    display: flex;
+}
+.features .column .column-img {
     width: 102px;
     height: 106px;
-    background: #ffc147;
+    margin-top: 80px;
     border-radius: 12px;
-}
-.features .images {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.features .column:nth-child(1) .column-img {
+    background: #ffc147; /* Màu nền cho cột đầu tiên */
+}
+
+.features .column:nth-child(2) .column-img {
+    background: #ff947a; /* Màu nền cho cột thứ hai */
+}
+
+.features .column:nth-child(3) .column-img {
+    background: #bf83ff; /* Màu nền cho cột thứ ba */
+}
+
 .features .column-title {
     color: #0d1111;
     font-size: 2rem;
     font-weight: 600;
+    margin-top: 26px;
 }
 .features .column-desc {
     color: #767e7e;
+    margin-top: 16px;
     font-size: 1.6rem;
     font-weight: 400;
     width: 168px;
+    line-height: 1.68;
+}
+
+.features .column {
+    width: 33.33%;
+}
+/* courses */
+.courses {
+    margin-top: 130px;
+}
+.courses .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.courses .title {
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-top: 18px;
+}
+.courses .row-desc {
+    display: flex;
+    justify-content: space-between;
+}
+.courses .row-desc .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.77; /* 177.778% */
+    width: 525px;
+    margin-top: 19px;
+}
+.courses .row-img {
+    margin-top: 79px;
+}
+
+.courses .content-img {
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+.courses .title-img {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.courses .desc-pirce {
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+.courses .price {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.courses .desc-img {
+    color: var(--color);
+    font-size: 1.4rem;
+}
+.courses .content-img {
+    padding: 18px 0 0 25px;
+}
+.courses .desc-pirce {
+    margin-top: 16px;
+}
+.courses .desc-img {
+    margin-top: 6px;
+}
+.courses .classes-img,
+.month-img {
+    margin-top: 19px;
+}
+.classes-img::before,
+.month-img::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1ebfc1;
+    margin-right: 8px;
+}
+.courses .row-footer {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-right: 8px;
+}
+.classes-img,
+.month-img {
+    display: flex;
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    margin-right: 8px;
 }
