@@ -17,7 +17,7 @@ body {
     color: var(--color);
 }
 .content {
-    width: 1110px;
+    width: 1170px;
     margin-left: auto;
     margin-right: auto;
     max-width: calc(100% - 48px);
@@ -342,7 +342,7 @@ body {
     margin-top: 16px;
     font-size: 1.6rem;
     font-weight: 400;
-    width: 168px;
+    width: 224px;
     line-height: 1.68;
 }
 
@@ -378,6 +378,7 @@ body {
 .courses .row-img {
     margin-top: 79px;
     display: flex;
+    flex-grow: 1;
 }
 
 .courses .title-img {
@@ -458,9 +459,15 @@ body {
     bottom: -120px;
     margin-left: 17px;
 }
+.courses .row-img > .row {
+    margin-left: 47px;
+}
+.courses .row-img .row:first-child {
+    margin-left: 0;
+}
 /* stast ; thống kê  */
 .stast {
-    margin-top: 265px;
+    margin-top: 389px;
 }
 .stast .main-stast {
     width: 862px;
@@ -482,4 +489,165 @@ body {
     color: #767e7e;
     font-size: 1.8rem;
     font-weight: 400;
+}
+/* quotes */
+.quotes {
+    margin-top: 264px;
+}
+.quotes .content-left {
+    width: 40%;
+}
+
+.quotes .blockquote {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 1.5; /* 150% */
+    width: 419px;
+}
+.quotes .blockquote-desc {
+    margin-top: 33px;
+}
+
+.blockquote-cite {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+}
+.quotes .cite {
+    margin: 33px 0 0 15px;
+}
+.blockquote-desc {
+    color: #767e7e;
+    font-size: 1.6rem;
+}
+.btn-blockquote {
+    display: flex;
+    margin-top: 52px;
+}
+.btn-blockquote .btn-next,
+.btn-back {
+    background: #2ac9bf;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-blockquote .btn-back {
+    margin-left: 30px;
+}
+.quotes .blockquote-cite::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    position: absolute;
+    bottom: 50%;
+    left: -10px;
+    font-weight: 700;
+}
+
+.quotes .content-right {
+    width: 60%;
+    height: 481px;
+    margin-left: 72px;
+    position: relative;
+}
+.quotes .content-quotes {
+    display: flex;
+}
+.quotes .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    height: 78px;
+    width: 78px;
+    background: #2ac9bf;
+    border-radius: 50%;
+}
+.quotes .button {
+    border: none;
+    background: #fefefd;
+}
+.quotes .btn-1 {
+    position: absolute;
+    bottom: 35%;
+}
+.quotes .btn-2 > .image {
+    height: 92px;
+    width: 92px;
+    position: absolute;
+    top: 0;
+    margin-left: 144px;
+    background: yellow;
+}
+.quotes .btn-3 > .image {
+    position: absolute;
+    bottom: 0;
+    margin-left: 234px;
+    background: palevioletred;
+}
+.quotes .btn-4 > .image {
+    position: absolute;
+    width: 235px;
+    height: 235px;
+    margin-left: 270px;
+    top: 110px;
+}
+.quotes .btn-5 {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.quotes .btn-6 {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+/* create-acount */
+.create-acount {
+    margin-top: 130px;
+    background: #def6f5;
+    padding: 76px 0 88px 0;
+}
+.content-create-acount {
+    display: flex;
+    align-items: center;
+}
+
+.create-acount .heading {
+    color: #070707;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.create-acount .desc-content-left {
+    color: #767e7e;
+    font-size: 1.8rem;
+    margin-top: 18px;
+}
+.create-acount .button-create-acount {
+    margin-left: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #edf1f5;
+}
+/* footer */
+.column-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.column-footer p {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.footer {
+    padding: 131px 0 50px 0;
 }
