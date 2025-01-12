@@ -8,10 +8,21 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 :root {
     --color: #9da6a5;
 }
 /* commit */
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .desc-font {
     font-size: 1.4rem;
     color: var(--color);
@@ -83,6 +94,11 @@ body {
     font-weight: 600;
     margin-left: 24px;
 }
+.header a.action-btn:hover,
+.action-link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
 /* hero-wrap */
 .hero-wrap {
     padding-bottom: 79px;
@@ -139,6 +155,7 @@ body {
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: pointer;
 }
 .hero-wrap .action .btn-play {
     width: 62px;
@@ -148,6 +165,7 @@ body {
     align-items: center;
     margin-left: 50px;
     background: #ffffff;
+    cursor: pointer;
 }
 .hero-wrap .action .img-play {
     width: 14px;
@@ -169,6 +187,10 @@ body {
     left: -40px;
     padding: 17px 25px 18px;
 }
+.hero-wrap .hero-button-top:hover {
+    background: #5d6564;
+    opacity: 0.9;
+}
 .hero-wrap .hero-button-top img {
     width: 36px;
     height: 40px;
@@ -181,7 +203,9 @@ body {
     font-size: 1rem;
     font-weight: 500;
     margin-left: 16px;
+    cursor: pointer;
 }
+
 .hero-wrap .hero-button-top .img-wrapper {
     position: relative;
     width: 36px; /* Đảm bảo width và height cho wrapper */
@@ -232,6 +256,11 @@ body {
     background: #fff;
     box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
 }
+.hero-button-between:hover {
+    opacity: 0.9;
+    background: #5d6564;
+    cursor: pointer;
+}
 .hero-button-between-desc {
     margin-top: 16px;
 }
@@ -246,6 +275,10 @@ body {
     height: 90px;
     border-radius: 24px;
     box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-wrap .hero-button-bottom:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 .hero-wrap .hero-button-bottom .desc {
     color: #0d1111;
@@ -375,6 +408,17 @@ body {
     width: 525px;
     margin-top: 19px;
 }
+.courses .link-view {
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
 .courses .row-img {
     margin-top: 79px;
     display: flex;
@@ -385,6 +429,10 @@ body {
     color: #0d1111;
     font-size: 2.2rem;
     font-weight: 700;
+}
+.courses .title-img:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .courses .desc-pirce {
     color: #767e7e;
@@ -536,6 +584,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+.btn-blockquote .btn-next:hover,
+.btn-back:hover {
+    opacity: 0.5;
+    background: #535353;
+}
+
 .btn-blockquote .btn-back {
     margin-left: 30px;
 }
@@ -637,10 +691,16 @@ body {
     justify-content: center;
     color: #edf1f5;
 }
+
+.create-acount .button-create-acount:hover {
+    opacity: 0.9;
+    color: #070707;
+    cursor: pointer;
+}
 /* footer */
 .column-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .column-footer p {
@@ -648,6 +708,35 @@ body {
     font-size: 1.8rem;
     font-weight: 500;
 }
+.logo-section {
+    position: relative;
+    top: -10px;
+}
 .footer {
     padding: 131px 0 50px 0;
+}
+.column-footer a {
+    text-decoration: none;
+    color: #535353;
+    font-size: 1.6rem;
+}
+.column-footer li {
+    margin-top: 24px;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+}
+.footer .copyright p {
+    color: #b0b5b4;
+    font-size: 18px;
+}
+.social-icons li {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.social-icons li a {
+    margin-left: 9px;
 }
